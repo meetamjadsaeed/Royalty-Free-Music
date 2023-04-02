@@ -1,0 +1,304 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .card,
+  .footer {
+    border-color: #222;
+  }
+
+  .code {
+    background: #111;
+  }
+
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+
+
+
+/* Nav  */
+.menu_wrapper {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.header_wrapper {
+  /* position: fixed; */
+  /* background-image:
+linear-gradient(to bottom, rgba(0, 60, 255, 0.5), rgba(0,0,255,0.5)),
+url('');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
+}
+
+
+.menu_item {
+  padding: 0px 10px 0px 10px;
+}
+
+/* hero */
+.hero_wrapper {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+    url('https://c0.wallpaperflare.com/preview/27/313/180/man-singing-on-stage.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+}
+
+.musiccard_wrapper {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.musiccard_wrapper_scroll {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.musiccard_item {
+  padding: 0px 10px 0px 10px;
+  color: #ffffff;
+}
+
+.musiclist_wrapper {
+  border-radius: 10px;
+  background: #1b68dd24;
+  padding: 5px 5px 5px 5px;
+  max-height: 500px;
+  /* adjust this value to your desired height */
+  overflow-y: auto;
+}
+
+
+.musiccard_wrapper {
+  border-radius: 10px;
+  margin: 10px 0px 10px 10px;
+
+}
+
+.musiccard_wrapper_active {
+  border-radius: 10px;
+  background: #394a7d73;
+  margin: 10px 0px 10px 10px;
+
+}
+
+
+/* cureent music  */
+
+.currentmusic_wrapper {
+  width: 100%;
+  background: #b2b9f0a3;
+  position: fixed;
+  bottom: 0;
+
+}
+
+.currentmusic_items {
+  list-style: none;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0px 20px 0px 20px;
+}
+
+.currentmusic_item {
+  padding: 0px 10px 0px 10px;
+
+}
+
+
+/* fresh music  */
+.freshmusic_wrapper {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+    url('https://elements-video-cover-images-0.imgix.net/files/3ff604cb-6481-47f4-80ea-13e50f750628/inline_image_preview.jpg?auto=compress%2Cformat&fit=min&h=394&w=700&s=2ff46f395f8490f6212a3967abd7e4dd');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+  max-height: 100vh;
+  /* adjust this value to your desired height */
+  overflow-y: auto;
+}
+
+/* recommendation music  */
+.recommendation_wrapper {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)),
+    url('https://rare-gallery.com/uploads/posts/5373044-wallpaper-music-wallpapers-music-background-concert-guitar-music-stage-smoke-man-musician-person-male-adult-performance-guitarist-black-and-white-outdoor-singer-sing-play-free-images.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+  max-height: 100vh;
+  /* adjust this value to your desired height */
+  overflow-y: auto;
+}
+
+/* WeekendHits  */
+.weekend_wrapper {
+  background: rgb(31, 43, 130);
+  background: linear-gradient(90deg, rgba(31, 43, 130, 1) 0%, rgba(236, 10, 115, 1) 57%);
+  height: 100vh;
+  padding: 50px;
+  max-height: 100vh;
+  /* adjust this value to your desired height */
+  overflow-y: auto;
+}
+
+
+
+/* test  */
+.scrollingwrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+.card {
+  display: inline-block;
+}
