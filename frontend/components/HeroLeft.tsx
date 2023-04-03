@@ -27,8 +27,8 @@ const HeroLeft = () => {
       <Carousel autoplay style={{ marginTop: "300px" }}>
         <div>
           <div style={contentStyle}>
-            <h1>Listen to what is trending</h1>
-            <Button type="primary">Play Now</Button>
+            <h1>Download to what is trending</h1>
+            <Button type="primary">Download Now</Button>
             <ul className={homeStyles.menu_wrapper}>
               <a>
                 <li className={homeStyles.menu_item}>
@@ -50,8 +50,8 @@ const HeroLeft = () => {
         </div>
         <div>
           <div style={contentStyle}>
-            <h1>Listen to what is trending</h1>
-            <Button type="primary">Play Now</Button>
+            <h1>Download to what is trending</h1>
+            <Button type="primary">Download Now</Button>
             <ul className={homeStyles.menu_wrapper}>
               <a>
                 <li className={homeStyles.menu_item}>
