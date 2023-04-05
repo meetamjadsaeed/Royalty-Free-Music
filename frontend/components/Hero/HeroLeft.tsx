@@ -19,7 +19,7 @@ const contentStyle = {
 };
 import { Button, Space } from "antd";
 
-import homeStyles from "../assets/css/Home.module.css";
+import homeStyles from "../../assets/css/Home.module.css";
 
 const HeroLeft = () => {
   return (

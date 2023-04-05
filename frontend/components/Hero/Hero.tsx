@@ -2,11 +2,12 @@ import React from "react";
 
 import { Col, Row } from "antd";
 
-import homeStyles from "../assets/css/Home.module.css";
+import homeStyles from "../../assets/css/Home.module.css";
 
 import HeroLeft from "./HeroLeft";
 import HeroRight from "./HeroRight";
-import CurrentMusic from "./CurrentMusic";
+import CurrentMusic from "../Current/CurrentMusic";
+// import Music from "../Music/Music";
 
 const Hero = () => {
   return (

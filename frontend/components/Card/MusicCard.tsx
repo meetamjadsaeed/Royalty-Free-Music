@@ -18,7 +18,7 @@ import {
 import { Image } from "antd";
 import { Modal } from "antd";
 
-import homeStyles from "../assets/css/Home.module.css";
+import homeStyles from "../../assets/css/Home.module.css";
 import Link from "next/link";
 
 interface Music {
@@ -165,11 +165,7 @@ function MusicCard() {
       {videos ? (
         videos.map((item) => {
           return (
-            <div
-              className={homeStyles.musiccard_wrapper}
-              // key={musicItem.id.videoId}
-              key={item.id}
-            >
+            <div className={homeStyles.musiccard_wrapper} key={item.id}>
               <ul className={homeStyles.musiccard_wrapper}>
                 <a>
                   <li className={homeStyles.musiccard_item}>
@@ -181,10 +177,7 @@ function MusicCard() {
                   <Image width={30} src="https://i.pickadummy.com/300" />
                 </li>
                 <a href={item?.url} target="_blank">
-                  <li className={homeStyles.musiccard_item}>
-                    {/* {musicItem.snippet.title} */}
-                    {item?.title}
-                  </li>
+                  <li className={homeStyles.musiccard_item}>{item?.title}</li>
                 </a>
 
                 <a>

@@ -4,7 +4,7 @@ import ytdl from 'ytdl-core';
 import { useState, useEffect } from "react";
 
 
-const API_KEY = 'AIzaSyCuQOzuD-LbT8KsMc4Bq9f7pS83cx14mFU';
+const API_KEY = '';
 const CHANNEL_ID = '@VlogNoCopyrightMusic';
 
 interface Video {

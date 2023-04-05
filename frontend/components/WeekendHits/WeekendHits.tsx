@@ -11,15 +11,16 @@ import {
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Space } from "antd";
 
-import homeStyles from "../assets/css/Home.module.css";
-import MusicCard from "./MusicCard";
+import homeStyles from "../../assets/css/Home.module.css";
+import MusicCard from "../Card/MusicCard";
 
-const Fresh = () => {
+const WeekendHits = () => {
   return (
     <>
-      <div className={homeStyles.freshmusic_wrapper}>
-        <h2 style={{ color: "#ffffff" }}>Fresh Music</h2>
-        <Row>
+      <div className={homeStyles.weekend_wrapper}>
+        <h2 style={{ color: "#ffffff" }}>Weekend Hits</h2>
+        <MusicCard />
+        {/* <Row>
           <Col span={8}>
             <MusicCard />
           </Col>
@@ -29,10 +30,10 @@ const Fresh = () => {
           <Col span={8}>
             <MusicCard />
           </Col>
-        </Row>
+        </Row> */}
       </div>
     </>
   );
 };
 
-export default Fresh;
+export default WeekendHits;

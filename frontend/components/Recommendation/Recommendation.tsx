@@ -11,14 +11,15 @@ import {
 import { UserOutlined } from "@ant-design/icons";
 import { Avatar, Space } from "antd";
 
-import homeStyles from "../assets/css/Home.module.css";
-import MusicCard from "./MusicCard";
+import homeStyles from "../../assets/css/Home.module.css";
+import MusicCard from "../Card/MusicCard";
 
 const Recommendation = () => {
   return (
     <div className={homeStyles.recommendation_wrapper}>
-      <h2 style={{ color: "#ffffff" }}>What Your Friends Are Listening To</h2>
-      <Row>
+      <h2 style={{ color: "#ffffff" }}>What Your Friends Are Downloading To</h2>
+      <MusicCard />
+      {/* <Row>
         <Col span={8}>
           <MusicCard />
         </Col>
@@ -29,7 +30,7 @@ const Recommendation = () => {
           <MusicCard />
         </Col>
         
-      </Row>
+      </Row> */}
     </div>
   );
 };

@@ -14,7 +14,7 @@ import { Avatar, Space } from 'antd';
 import MainNav from "./MainNav";
 import MainSearchBar from "./MainSearchBar";
 
-import homeStyles from '../assets/css/Home.module.css'
+import homeStyles from '../../assets/css/Home.module.css'
 
 
 const Header = () => {

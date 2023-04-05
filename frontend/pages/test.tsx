@@ -1,6 +1,6 @@
 import React from 'react'
 // import MusicPlayer from '../components/MusicPlayer'
-import MusicList from '../components/MusicList'
+import MusicList from '../components/Music/MusicList'
 import VideosList from '../components/VideosList'
 
 
