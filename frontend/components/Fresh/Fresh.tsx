@@ -13,11 +13,13 @@ import { Avatar, Space } from "antd";
 
 import homeStyles from "../../assets/css/Home.module.css";
 import MusicCard from "../Card/MusicCard";
+import Filters from "../Filter/Filters";
 
 const Fresh = () => {
   return (
     <>
       <div className={homeStyles.freshmusic_wrapper}>
+        <Filters/>
         <h2 style={{ color: "#ffffff" }}>Fresh Music</h2>
         <MusicCard />
         {/* <Row>
