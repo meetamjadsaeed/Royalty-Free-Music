@@ -70,7 +70,7 @@ const getVideos = async (): Promise<VideoItem[]> => {
     await page.waitForSelector("#contents");
     const pageVideos = await page.$$eval("#contents #thumbnail", (items) =>
       items.map((item) => {
-        console.log(item);
+        // console.log(item);
         const title =
           item.querySelector("a > #video-title")?.getAttribute("title") ?? "";
         const url = item.closest("a")?.getAttribute("href") ?? "";

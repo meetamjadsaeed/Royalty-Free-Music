@@ -88,6 +88,8 @@ interface Video {
 function MusicCard() {
   const [videos, setVideos] = useState<Video[]>([]);
 
+  http://localhost:3000/api/undefinedvideos
+
   useEffect(() => {
     axios
       .get(`http://localhost:3000/api/videos`)

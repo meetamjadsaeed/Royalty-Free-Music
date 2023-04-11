@@ -101,7 +101,7 @@ const fetchChannels = async (): Promise<ChannelItem[]> => {
     let name: string | undefined;
     if (match && match.length > 1) {
       name = match[1];
-      console.log(name); // Output: VlogNoCopyrightMusic
+      // console.log(name); // Output: VlogNoCopyrightMusic
     } else {
       console.log("No match found");
     }
