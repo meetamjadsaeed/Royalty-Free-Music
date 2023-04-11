@@ -13,10 +13,12 @@ import { Avatar, Space } from "antd";
 
 import homeStyles from "../../assets/css/Home.module.css";
 import MusicCard from "../Card/MusicCard";
+import Filters from "../Filter/Filters";
 
 const Recommendation = () => {
   return (
     <div className={homeStyles.recommendation_wrapper}>
+      {/* <Filters/> */}
       <h2 style={{ color: "#ffffff" }}>What Your Friends Are Downloading To</h2>
       <MusicCard />
       {/* <Row>

@@ -19,17 +19,19 @@ import MusicCard from "../Card/MusicCard";
 import Creator from "./Creator";
 
 interface Creator {
-  id: string;
-  title: string;
+  id: number;
+  name: string;
   description: string;
+  url: string;
   // thumbnail: string;
   // description: string;
 }
 
 interface CreatorPropsData {
-  id: string;
-  title: string;
+  id: number;
+  name: string;
   description: string;
+  url: string;
 }
 
 interface CreatorProps {
@@ -41,24 +43,21 @@ const Creators = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/videos`)
+      .get(`http://localhost:3000/api/creators`)
       .then((response) => {
         // const items = response.data.data.slice(0, 4);
-        const items = response.data.data;
+        const items = response.data;
 
         const creatorsList = items.map((item: any) => {
-          const videoId = item.videoId;
-          // const videoUrl = item.url;
-          const VideoTitle = item.title;
-          // const thumbnailUrl = item.thumbnail;
-          const videDescription = item.description;
-
+          const channelId = item.videoId;
+          const channelName = item.name;
+          const channelDescription = item.description;
+          const channelURL = item.url;
           return {
-            id: videoId,
-            // url: videoUrl,
-            title: VideoTitle,
-            // thumbnailUrl,
-            description: videDescription,
+            id: channelId,
+            name: channelName,
+            description: channelDescription,
+            url: channelURL,
           };
         });
 
@@ -75,14 +74,15 @@ const Creators = () => {
         <h2 style={{ color: "#ffffff" }}>Browse By Creators</h2>
         <Row gutter={16}>
           {creators ? (
-            creators.map((item) => {
+            creators.map((item, index) => {
               return (
-                <Col span={8} key={item.id}>
+                <Col span={8} key={index}>
                   <Creator
                     propsData={{
-                      id: item.id,
-                      title: item.title,
+                      id: index,
+                      name: item.name,
                       description: item.description,
+                      url: item.url,
                     }}
                   />
                 </Col>

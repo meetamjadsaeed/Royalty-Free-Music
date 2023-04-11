@@ -174,7 +174,7 @@ function MusicCard() {
                 </a>
 
                 <li className={homeStyles.musiccard_item}>
-                  <Image width={30} src="https://i.pickadummy.com/300" />
+                  <Image width={30} src="https://source.unsplash.com/user/c_v_r/300x300" />
                 </li>
                 <a href={item?.url} target="_blank">
                   <li className={homeStyles.musiccard_item}>{item?.title}</li>

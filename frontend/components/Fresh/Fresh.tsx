@@ -19,7 +19,7 @@ const Fresh = () => {
   return (
     <>
       <div className={homeStyles.freshmusic_wrapper}>
-        <Filters/>
+        {/* <Filters/> */}
         <h2 style={{ color: "#ffffff" }}>Fresh Music</h2>
         <MusicCard />
         {/* <Row>

@@ -85,15 +85,25 @@ const fetchChannels = async (): Promise<ChannelItem[]> => {
     // Wait for the video elements to load
     await page.waitForSelector("#description-container");
 
-    const name = await page.$eval(
-      // "#channel-header-container > div > div > div > h1",
-      "#channel-header-container",
-      // Error: Error: failed to find element matching selector "#channel-header-container > div > div > div > h1"
-      (el) => el.textContent || ""
-    );
+    const regex = /@([^\/]*)\//;
+    const match = url.match(regex);
+    let name: string | undefined;
+    if (match && match.length > 1) {
+      name = match[1];
+      console.log(name); // Output: VlogNoCopyrightMusic
+    } else {
+      console.log("No match found");
+    }
+    // const name = await page.$eval(
+    //   // "#channel-header-container > div > div > div > h1",
+    //   "#channel-header-container",
+    //   // Error: Error: failed to find element matching selector "#channel-header-container > div > div > div > h1"
+    //   (el) => el.textContent || ""
+    // );
 
     const description = await page.$eval(
-      "#description-container > yt-formatted-string",
+      // "#description-container > yt-formatted-string",
+      "#channel-header-container",
       (el) => el.textContent || ""
     );
 
@@ -107,7 +117,8 @@ const fetchChannels = async (): Promise<ChannelItem[]> => {
     channels.push({
       name,
       description,
-      url: `https://www.youtube.com${channelUrl}`,
+      // url: `https://www.youtube.com${channelUrl}`,
+      url: `https://www.youtube.com/@${name}`,
     });
   }
 

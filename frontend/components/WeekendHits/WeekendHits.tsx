@@ -13,10 +13,12 @@ import { Avatar, Space } from "antd";
 
 import homeStyles from "../../assets/css/Home.module.css";
 import MusicCard from "../Card/MusicCard";
+import Filters from "../Filter/Filters";
 
 const WeekendHits = () => {
   return (
     <>
+      {/* <Filters/> */}
       <div className={homeStyles.weekend_wrapper}>
         <h2 style={{ color: "#ffffff" }}>Weekend Hits</h2>
         <MusicCard />

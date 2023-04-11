@@ -22,10 +22,8 @@ const HeroRight = () => {
     <>
       <h2 style={{ color: "#ffffff" }}>Top Royalty Free Music Download</h2>
       <div className={homeStyles.musiclist_wrapper}>
-        
-
-        {/* <MusicCard /> */}
-        <Music/>
+        <MusicCard />
+        {/* <Music/> */}
       </div>
     </>
   );
