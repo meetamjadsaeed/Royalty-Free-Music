@@ -34,7 +34,7 @@ const Home: NextPage = () => {
       <div>
         <Modal
           title="Welcome to Top Royalty Free Music Downloader"
-          visible={visible}
+          open={visible}
           onOk={handleOk}
           onCancel={handleCancel}
         >

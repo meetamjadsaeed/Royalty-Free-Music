@@ -73,9 +73,20 @@ const fetchChannels = async (): Promise<ChannelItem[]> => {
   const page = await browser.newPage();
 
   const urls = [
+    // "https://www.youtube.com/@VlogNoCopyrightMusic/about",
+    // "https://www.youtube.com/@NoCopyrightSounds/about",
+    // "https://www.youtube.com/@RFM_NCM/about",
     "https://www.youtube.com/@VlogNoCopyrightMusic/about",
     "https://www.youtube.com/@NoCopyrightSounds/about",
     "https://www.youtube.com/@RFM_NCM/about",
+    "https://www.youtube.com/@audiolibrary_/about",
+    "https://www.youtube.com/@BassRebels/about",
+    "https://www.youtube.com/@tellyourstorymusicbyikson/about",
+    "https://www.youtube.com/@Infraction/about",
+    "https://www.youtube.com/@incompetech_kmac/about",
+    "https://www.youtube.com/@truly-channel/about",
+    "https://www.youtube.com/@NoCopyrightSounds/about",
+    "https://www.youtube.com/@VlogNoCopyrightMusic/about",
   ];
 
   const channels: ChannelItem[] = [];

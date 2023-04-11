@@ -29,9 +29,11 @@ const Creator = ({ propsData }: CreatorProps) => {
         }}
       >
         {propsData?.description.slice(0,250)}
-        <Link href={propsData?.url}>
+        {/* <Link href={propsData?.url}> */}
+        <a target="_blank" href={propsData?.url} rel="noopener noreferrer">
           <Button type="primary">Visit Creator</Button>
-        </Link>
+        {/* </Link> */}
+        </a>
       </Card>
     </>
   );
