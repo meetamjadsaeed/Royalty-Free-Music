@@ -13,6 +13,8 @@ import Fresh from "../components/Fresh/Fresh";
 import Recommendation from "../components/Recommendation/Recommendation";
 import WeekendHits from "../components/WeekendHits/WeekendHits";
 import Creators from "../components/ContentCreators/Creators.";
+import MainFooter from "../components/Footer/MainFooter";
+
 
 const Home: NextPage = () => {
   const [visible, setVisible] = useState(false);
@@ -52,6 +54,7 @@ const Home: NextPage = () => {
       <Creators />
       <Recommendation />
       <WeekendHits />
+      <MainFooter/>
     </>
   );
 };
