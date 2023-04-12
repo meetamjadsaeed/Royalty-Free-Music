@@ -19,9 +19,9 @@ import homeStyles from "../assets/css/Home.module.css";
 
 const CurrentMusic = () => {
   const [disabled, setDisabled] = useState(false);
-  const onChange = (checked) => {
-    setDisabled(checked);
-  };
+  // const onChange = (checked) => {
+  //   setDisabled(checked);
+  // };
   return (
     <>
       <div className={homeStyles.currentmusic_wrapper}>
