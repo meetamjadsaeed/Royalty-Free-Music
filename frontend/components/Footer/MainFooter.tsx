@@ -37,7 +37,7 @@ const MainFooter = () => {
                 <a href="#">Home</a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="https://www.linkedin.com/in/meetamjadsaeed/" target="_blank">Contact</a>
               </li>
               <li>
                 <a href="/about" target="_blank">About</a>

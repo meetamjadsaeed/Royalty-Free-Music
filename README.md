@@ -3,7 +3,7 @@
 A tool for Downloading the Royalty Free Music
 
 <h1>Music Hub</h1>
-<p>Music Hub is a free and open-source web application that allows users to download copyright-free music in various genres and styles. The app features a search function that enables users to quickly find the type of music they are looking for, as well as audio previews of each track, so users can listen to a sample before downloading.</p>
+<p>Music Hub is a free and open-source web application created in Next.js 12, with Ant Design, TypeScript, Node.js, Express, and MongoDB. It allows users to download copyright-free music in various genres and styles. The app features a search function that enables users to quickly find the type of music they are looking for, as well as audio previews of each track, so users can listen to a sample before downloading.</p>
 <h2>Features</h2>
 <h3>User Accounts</h3>
 <p>Music Hub allows users to create accounts, which they can use to create playlists, save their favorite tracks, and access their download history.</p>
@@ -18,13 +18,13 @@ A tool for Downloading the Royalty Free Music
 <h2>Downloading Music</h2>
 <p>Music Hub offers high-quality audio files in various formats, including MP3 and WAV, that users can easily download.</p>
 <h2>Contributing</h2>
-<p>Music Hub is an open-source project, and we welcome contributions from developers and designers alike. If you're interested in contributing, please check out our <a href="https://github.com/your-username/your-repo-name">GitHub repository</a> and read our <a href="https://github.com/your-username/your-repo-name/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</p>
+<p>Music Hub is an open-source project, and we welcome contributions from developers and designers alike. If you're interested in contributing, please check out our <a href="https://github.com/meetamjadsaeed/Royalty-Free-Music">GitHub repository</a> and read our <a href="#">contribution guidelines</a>.</p>
 <h2>License</h2>
 <p>Music Hub is released under the <a href="https://github.com/your-username/your-repo-name/blob/master/LICENSE.md">MIT License</a>. See LICENSE.md for details.</p>
 <h2>Credits</h2>
-<p>Music Hub was created by [Your Name Here]. Special thanks to the following contributors:</p>
+<p>Music Hub was created by Amjad Saeed. Special thanks to the following contributors:</p>
 <ul>
-  <li>[Contributor 1]</li>
-  <li>[Contributor 2]</li>
-  <li>[Contributor 3]</li>
+  <li>Amjad Saeed</li>
+  <!-- <li>[Contributor 2]</li> -->
+  <!-- <li>[Contributor 3]</li> -->
 </ul>
