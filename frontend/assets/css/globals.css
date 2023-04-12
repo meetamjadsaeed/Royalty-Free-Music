@@ -30,14 +30,14 @@ a {
 
 /* footer  */
 footer {
-  position: fixed;
+  /* position: fixed; */
   background: #140B5C;
   width: 100%;
   bottom: 0;
   left: 0;
 }
 
-footer::before {
+/* footer::before {
   content: '';
   position: absolute;
   left: 0;
@@ -45,7 +45,7 @@ footer::before {
   height: 1px;
   width: 100%;
   background: #AFAFB6;
-}
+} */
 
 footer .content {
   max-width: 1250px;

@@ -41,9 +41,13 @@ interface CreatorProps {
 const Creators = () => {
   const [creators, setCreators] = useState<Creator[]>([]);
 
+  const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
+  const domain = process.env.DOMAIN_NAME || 'localhost';
+  const port = process.env.PORT || 3000;
+
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/creators`)
+      .get(`${protocol}://${domain}:${port}/api/creators`)
       .then((response) => {
         // const items = response.data.data.slice(0, 4);
         const items = response.data;
