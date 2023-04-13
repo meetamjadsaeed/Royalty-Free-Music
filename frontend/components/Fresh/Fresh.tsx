@@ -23,18 +23,15 @@ const Fresh = () => {
         {/* <Filters/> */}
         <h2 style={{ color: "#ffffff" }}>Fresh Music</h2>
         {/* <MusicCard /> */}
-        <AudioCard/>
-        {/* <Row>
-          <Col span={8}>
-            <MusicCard />
+        {/* <AudioCard/> */}
+        <Row>
+          <Col span={12}>
+            <AudioCard />
           </Col>
-          <Col span={8}>
-            <MusicCard />
+          <Col span={12}>
+            <AudioCard />
           </Col>
-          <Col span={8}>
-            <MusicCard />
-          </Col>
-        </Row> */}
+        </Row>
       </div>
     </>
   );

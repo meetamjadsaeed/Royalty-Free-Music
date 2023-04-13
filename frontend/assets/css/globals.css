@@ -361,7 +361,7 @@ footer .bottom-details .bottom_text {
 /* Audio music card  */
 .audioCardWrapper {
   /* height: 20%; */
-  width: 30%;
+  /* width: 30%; */
   /* display: flex; */
   /* justify-content: center; */
   /* align-items: center; */
@@ -375,7 +375,7 @@ footer .bottom-details .bottom_text {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   /* border-radius: 1%; */
-  margin: 70px;
+  margin: 50px;
 }
 
 .audioCard {
