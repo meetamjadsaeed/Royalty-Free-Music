@@ -350,3 +350,36 @@ footer .bottom-details .bottom_text {
 .ytp-large-play-button .ytp-button .ytp-large-play-button-red-bg {
   display: none !important;
 }
+
+/* Audio music card  */
+.audioCard {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  border-radius: 5px;
+}
+
+.audioCard img {
+  height: 100px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
+}
+
+.audioCard .content {
+  color: #ffffff;
+}
+
+.audioCard .controlls {
+  margin: 10px 0;
+}
+
+.audioCard .controlls a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.audioCard .controlls .fa {
+  color: #ffffff;
+  height: 60px;
+}
