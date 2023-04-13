@@ -14,6 +14,7 @@ import { Avatar, Space } from "antd";
 import homeStyles from "../../assets/css/Home.module.css";
 import MusicCard from "../Card/MusicCard";
 import Filters from "../Filter/Filters";
+import AudioCard from "../Card/AudioCard";
 
 const Fresh = () => {
   return (
@@ -21,7 +22,8 @@ const Fresh = () => {
       <div className={homeStyles.freshmusic_wrapper}>
         {/* <Filters/> */}
         <h2 style={{ color: "#ffffff" }}>Fresh Music</h2>
-        <MusicCard />
+        {/* <MusicCard /> */}
+        <AudioCard/>
         {/* <Row>
           <Col span={8}>
             <MusicCard />

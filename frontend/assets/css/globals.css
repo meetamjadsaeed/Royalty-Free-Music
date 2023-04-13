@@ -4,6 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* background: green; */
+  background-image: url('https://th.bing.com/th/id/R.8243eb09178404282e6ebbc9344f898f?rik=AY4SIuJOZnXL4g&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* adjust opacity as needed */
+  /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
 }
 
 a {
@@ -15,7 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -24,7 +31,7 @@ a {
     color: white;
     background: black;
   }
-}
+} */
 
 /* footer  */
 footer {
@@ -352,6 +359,25 @@ footer .bottom-details .bottom_text {
 }
 
 /* Audio music card  */
+.audioCardWrapper {
+  /* height: 20%; */
+  width: 30%;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-image: radial-gradient( circle 502px at 2.1% 5.1%, rgba(233, 0, 120, 1) 0%, rgba(0, 0, 0, 1) 90.1%); */
+  /* background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255, 0, 0, 0.621)); */
+  /* background-image: linear-gradient(90deg, rgba(255, 255, 255, .3) 0%, rgba(231, 231, 231, .3) 22.39%, rgba(209, 209, 209,  .3) 42.6%, rgba(182, 182, 182, .3) 79.19%, rgba(156, 156, 156, .3) 104.86%); */
+  background: rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* border-radius: 1%; */
+  margin: 70px;
+}
+
 .audioCard {
   height: 200px;
   width: 400px;
