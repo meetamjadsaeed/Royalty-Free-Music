@@ -26,12 +26,10 @@ a {
   }
 }
 
-
-
 /* footer  */
 footer {
   /* position: fixed; */
-  background: #140B5C;
+  background: #140b5c;
   width: 100%;
   bottom: 0;
   left: 0;
@@ -83,47 +81,47 @@ footer .content .top {
 }
 
 .top .media-icons a:nth-child(1) {
-  background: #4267B2;
+  background: #4267b2;
 }
 
 .top .media-icons a:nth-child(1):hover {
-  color: #4267B2;
+  color: #4267b2;
   background: #fff;
 }
 
 .top .media-icons a:nth-child(2) {
-  background: #1DA1F2;
+  background: #1da1f2;
 }
 
 .top .media-icons a:nth-child(2):hover {
-  color: #1DA1F2;
+  color: #1da1f2;
   background: #fff;
 }
 
 .top .media-icons a:nth-child(3) {
-  background: #E1306C;
+  background: #e1306c;
 }
 
 .top .media-icons a:nth-child(3):hover {
-  color: #E1306C;
+  color: #e1306c;
   background: #fff;
 }
 
 .top .media-icons a:nth-child(4) {
-  background: #0077B5;
+  background: #0077b5;
 }
 
 .top .media-icons a:nth-child(4):hover {
-  color: #0077B5;
+  color: #0077b5;
   background: #fff;
 }
 
 .top .media-icons a:nth-child(5) {
-  background: #FF0000;
+  background: #ff0000;
 }
 
 .top .media-icons a:nth-child(5):hover {
-  color: #FF0000;
+  color: #ff0000;
   background: #fff;
 }
 
@@ -146,7 +144,7 @@ footer .content .link-boxes .box {
 }
 
 .link-boxes .box .link_name::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -2px;
@@ -166,7 +164,7 @@ footer .content .link-boxes .box {
   font-weight: 400;
   text-decoration: none;
   opacity: 0.8;
-  transition: all 0.4s ease
+  transition: all 0.4s ease;
 }
 
 .content .link-boxes .box li a:hover {
@@ -182,8 +180,8 @@ footer .content .link-boxes .box {
   height: 40px;
   width: calc(100% + 55px);
   outline: none;
-  border: 2px solid #AFAFB6;
-  background: #140B5C;
+  border: 2px solid #afafb6;
+  background: #140b5c;
   border-radius: 4px;
   padding: 0 15px;
   font-size: 15px;
@@ -192,13 +190,13 @@ footer .content .link-boxes .box {
 }
 
 .link-boxes .input-box input::placeholder {
-  color: #AFAFB6;
+  color: #afafb6;
   font-size: 16px;
 }
 
 .link-boxes .input-box input[type="button"] {
   background: #fff;
-  color: #140B5C;
+  color: #140b5c;
   border: none;
   font-size: 18px;
   font-weight: 500;
@@ -214,7 +212,7 @@ footer .content .link-boxes .box {
 
 footer .bottom-details {
   width: 100%;
-  background: #0F0844;
+  background: #0f0844;
 }
 
 footer .bottom-details .bottom_text {
@@ -303,5 +301,111 @@ footer .bottom-details .bottom_text {
 
   footer .content .link-boxes .input-box {
     width: 100%;
+  }
+}
+
+/* videos  */
+
+
+/* video card  */
+#card-container {
+  width: 700px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -175px 0 0 -350px;
+}
+#card {
+  animation: backAn 60s infinite;
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: url(http://riccardotartaglia.it/img/deadpool/back.jpg) 100% bottom;
+  box-shadow: 0px 45px 100px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1000px rgba(156, 27, 27, 0.6);
+}
+
+#card .text-block {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7);
+}
+#card .text-block h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#card .text-block h1 small {
+  font-size: 0.4em;
+  color: #ccc;
+  position: relative;
+  bottom: 10px;
+}
+#card .text-block h3 {
+  margin: 0;
+  font-weight: 700;
+}
+#card .text-block p {
+  font-weight: 300;
+  width: 60%;
+}
+#card .text-block button {
+  transition: all 0.35s cubic-bezier(0.37, 0.26, 0.35, 1);
+  border: 4px solid #fff;
+  padding: 10px;
+  background: transparent;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+}
+#card .text-block button:hover {
+  background: #b51d2a;
+}
+
+#card-container .pg {
+  position: absolute;
+  height: 450px;
+  width: 40%;
+  right: -10px;
+  bottom: 0px;
+  z-index: 2;
+}
+#card-container .pg > img {
+  height: 450px;
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 60%
+  );
+  z-index: 1;
+}
+button {
+  color: #fff;
+}
+
+@keyframes backAn {
+  0% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 250%;
+  }
+  100% {
+    background-size: 100%;
   }
 }
