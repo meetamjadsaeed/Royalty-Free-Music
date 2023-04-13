@@ -1,128 +1,81 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 import { Row, Col } from "antd";
 import { Button } from "antd/es/radio";
 
+interface musicVideos {
+  id: number;
+  imageUrl: string;
+  name: string;
+  title: string;
+}
+
+import Video from "./Video";
+
+interface Video {
+  id: string;
+  url: string;
+  title: string;
+  thumbnail: string;
+  description: string;
+}
+
 const Videos = () => {
+  const [videos, setVideos] = useState<Video[]>([]);
+
+  const protocol = process.env.NODE_ENV === "production" ? "https" : "http";
+  const domain = process.env.DOMAIN_NAME || "localhost";
+  const port = process.env.PORT || 3000;
+
+  useEffect(() => {
+    axios
+      .get(`${protocol}://${domain}:${port}/api/videos`)
+      .then((response) => {
+        // const items = response.data.data.slice(0, 4);
+        const items = response.data.data;
+
+        const videoList = items.map((item: any) => {
+          const videoId = item.videoId;
+          const videoUrl = item.url;
+          const title = item.title;
+          const thumbnailUrl = item.thumbnail;
+          const videDescription = item.description;
+
+          return {
+            id: videoId,
+            url: videoUrl,
+            title,
+            thumbnailUrl,
+            videDescription,
+          };
+        });
+
+        setVideos(videoList);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  }, []);
+
   return (
     <>
-      <div className="music-video-container">
-        <Row gutter={[16, 16]} justify="center" style={{ marginTop: "5%" }}>
-          <Col span={24}>
-            <div
-              id="card-container"
-              data-offset="2"
-              style={{ marginTop: "5%" }}
-            >
-              <div className="pg">
-                <img src="http://riccardotartaglia.it/img/deadpool/deadpool.png" />
-              </div>
-              <div id="card">
-                <div className="shine"></div>
-                <div className="text-block">
-                  <h1>
-                    Deadpool <small>(2016)</small>
-                  </h1>
-                  <h3>Action, Adventure, Sci-Fi</h3>
-                  <p>
-                    Deadpool is a 2016 American superhero film based on the
-                    Marvel Comics character of the same name. It is the eighth
-                    installment of the X-Men film series, and is directed by Tim
-                    Miller.
-                  </p>
-                  <button>Download</button>
-                </div>
-              </div>
-            </div>
-          </Col>
-          {/* <Col span={24}>
-            <div
-              id="card-container"
-              data-offset="2"
-              style={{ marginTop: "5%" }}
-            >
-              <div className="pg">
-                <img src="http://riccardotartaglia.it/img/deadpool/deadpool.png" />
-              </div>
-              <div id="card">
-                <div className="shine"></div>
-                <div className="text-block">
-                  <h1>
-                    Deadpool <small>(2016)</small>
-                  </h1>
-                  <h3>Action, Adventure, Sci-Fi</h3>
-                  <p>
-                    Deadpool is a 2016 American superhero film based on the
-                    Marvel Comics character of the same name. It is the eighth
-                    installment of the X-Men film series, and is directed by Tim
-                    Miller.
-                  </p>
-                  <button>Watch Trailer</button>
-                </div>
-              </div>
-            </div>
-          </Col> */}
-          {/* <Col span={12}>
-            <div id="card-container" data-offset="2">
-              <div className="pg">
-                <img src="http://riccardotartaglia.it/img/deadpool/deadpool.png" />
-              </div>
-              <div id="card">
-                <div className="shine"></div>
-                <div className="text-block">
-                  <h1>
-                    Deadpool <small>(2016)</small>
-                  </h1>
-                  <h3>Action, Adventure, Sci-Fi</h3>
-                  <p>
-                    Deadpool is a 2016 American superhero film based on the
-                    Marvel Comics character of the same name. It is the eighth
-                    installment of the X-Men film series, and is directed by Tim
-                    Miller.
-                  </p>
-                  <button>Watch Trailer</button>
-                </div>
-              </div>
-            </div>
-          </Col> */}
-          {/* <Col span={8}>
-            <div className="music-video">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Music Video 3"
-                frameborder="0"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </Col> */}
-        </Row>
-        {/* <Row gutter={[16, 16]} justify="center" style={{ marginTop: "5%" }}>
-          <Col span={24}>
-            <div id="card-container" data-offset="2" style={{ marginTop: "5%" }}>
-              <div className="pg">
-                <img src="http://riccardotartaglia.it/img/deadpool/deadpool.png" />
-              </div>
-              <div id="card">
-                <div className="shine"></div>
-                <div className="text-block">
-                  <h1>
-                    Deadpool <small>(2016)</small>
-                  </h1>
-                  <h3>Action, Adventure, Sci-Fi</h3>
-                  <p>
-                    Deadpool is a 2016 American superhero film based on the
-                    Marvel Comics character of the same name. It is the eighth
-                    installment of the X-Men film series, and is directed by Tim
-                    Miller.
-                  </p>
-                  <button>Watch Trailer</button>
-                </div>
-              </div>
-            </div>
-          </Col>
-        </Row> */}
-      </div>
+      <Row gutter={[16, 16]} justify="center" style={{ marginTop: "5%" }}>
+        {videos ? (
+          videos.map((item) => {
+            return (
+              <>
+                <Col span={8}>
+                  <Video />
+                </Col>
+              </>
+            );
+          })
+        ) : (
+          <p>loading...</p>
+        )}
+      </Row>
     </>
   );
 };
