@@ -2,8 +2,7 @@ import React from "react";
 import { SmileOutlined } from "@ant-design/icons";
 import { Button, Result } from "antd";
 
-import MainFooter from "../components/Footer/MainFooter";
-import Header from "../components/Header/Header";
+
 import Link from "next/link";
 
 const about = () => {
@@ -48,7 +47,7 @@ const about = () => {
         <Button type="primary">Home</Button>
       </Link>
 
-      <MainFooter />
+      {/* <MainFooter /> */}
     </>
   );
 };

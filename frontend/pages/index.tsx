@@ -7,13 +7,19 @@ import { Avatar } from "antd";
 import { useState, useEffect } from "react";
 import { Modal } from "antd";
 
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import Fresh from "../components/Fresh/Fresh";
-import Recommendation from "../components/Recommendation/Recommendation";
-import WeekendHits from "../components/WeekendHits/WeekendHits";
-import Creators from "../components/ContentCreators/Creators.";
-import MainFooter from "../components/Footer/MainFooter";
+// import Header from "../components/Layout/MainHeader/MainHeader";
+// import Hero from "../components/Layout/Hero/Hero";
+// import Fresh from "../components/Audio/Fresh/Fresh";
+// import Recommendation from "../components/Recommendation/Recommendation";
+// import WeekendHits from "../components/WeekendHits/WeekendHits";
+// import Creators from "../components/Video/Creator/Creators.";
+// import MainFooter from "../components/Layout/MainFooter/MainFooter";
+
+
+import MainHeader from "../components/layout/mainHeader/MainHeader";
+// import MainFooter from "../components/layout/mainFooter/MainFooter;
+import Hero from "../components/layout/hero/Hero";
+
 
 
 const Home: NextPage = () => {
@@ -50,13 +56,21 @@ const Home: NextPage = () => {
         </Modal>
       </div>
       <Hero />
-      <Fresh />
+      {/* <Fresh />
       <Creators />
       <Recommendation />
       <WeekendHits />
-      <MainFooter/>
+      <MainFooter/> */}
     </>
   );
 };
 
 export default Home;
+
+
+// music with categories 
+// all musics
+// musics from top youtube channels 
+// Browse By Creators ( youtube channels )
+
+
