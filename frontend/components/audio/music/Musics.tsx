@@ -18,7 +18,7 @@ import {
 import { Image } from "antd";
 import { Modal } from "antd";
 
-import homeStyles from "../../assets/css/Home.module.css";
+// import homeStyles from "../../assets/css/Home.module.css";
 import Link from "next/link";
 
 import Music from "./Music";

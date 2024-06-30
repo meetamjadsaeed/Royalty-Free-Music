@@ -1,6 +1,6 @@
 import React from "react";
 
-import homeStyles from "../../assets/css/Home.module.css";
+// import homeStyles from "../../assets/css/Home.module.css";
 
 const MainFooter = () => {
   return (

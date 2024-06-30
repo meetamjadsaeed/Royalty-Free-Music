@@ -4,6 +4,11 @@ A tool for Downloading the Royalty Free Music
 
 <h1>Music Hub</h1>
 <p>Music Hub is a free and open-source web application created in Next.js 12, with Ant Design, TypeScript, Node.js, Express, and MongoDB. It allows users to download copyright-free music in various genres and styles. The app features a search function that enables users to quickly find the type of music they are looking for, as well as audio previews of each track, so users can listen to a sample before downloading.</p>
+<h1>Technologies Used</h1>
+<p>Next.js as full stack framework</p>
+<p>Antd for design</p>
+<p>Puppeteer</p>
+<p>TypeScript</p>
 <h2>Features</h2>
 <h3>User Accounts</h3>
 <p>Music Hub allows users to create accounts, which they can use to create playlists, save their favorite tracks, and access their download history.</p>
