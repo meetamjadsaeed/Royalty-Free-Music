@@ -9,7 +9,7 @@ A tool for Downloading the Royalty Free Music
 <p>Ant Design</p>
 <p>Puppeteer</p>
 <p>TypeScript</p>
-<p>OAuth 2.0
+<p>OAuth 2.0</p>
 <p>Google APIs</p>
 <p>Express.js</p>
 
