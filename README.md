@@ -9,6 +9,9 @@ A tool for Downloading the Royalty Free Music
 <p>Antd for design</p>
 <p>Puppeteer</p>
 <p>TypeScript</p>
+<p>OAuth 2.0
+<p>Google APIs</p>
+
 <h2>Features</h2>
 <h3>User Accounts</h3>
 <p>Music Hub allows users to create accounts, which they can use to create playlists, save their favorite tracks, and access their download history.</p>
